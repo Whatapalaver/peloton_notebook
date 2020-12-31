@@ -8,7 +8,7 @@ Project dependacies are installed via the step below.
 
 ## Installing requirements
 
-From your desired Python envirnment:
+From your desired Python environment:
 
 1. `make base-requirements`
 
