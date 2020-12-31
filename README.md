@@ -8,6 +8,16 @@ Project dependacies are installed via the step below.
 
 ## Installing requirements
 
+I'm using virtualenvwrapper:
+
+- `mkvirtualenv --python python3 peloton`
+- `workon peloton`
+
+Then I need to make the [virtualenv visible to the python notebook](https://janakiev.com/blog/jupyter-virtual-envs/) using these instructions.
+
+- `pip install ipykernel`
+- `python -m ipykernel install --user --name=peloton`
+
 From your desired Python environment:
 
 1. `make base-requirements`
@@ -17,7 +27,8 @@ From your desired Python environment:
 1. Set up your local environment using `make create-local-env`.
 2. Update the .env file with your peloton username and password.
 3. `cd notebooks`.
-4. `jupyter notebook`.
+4. `jupyter-labs`.
+5. Select the appropriate kernel `peloton`
 
 ## Screen grabs
 
